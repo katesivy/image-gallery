@@ -27,13 +27,15 @@ function colorChange() {
     const overlay = document.querySelector('.overlay'); 
     let x = btn.getAttribute('class');
         if (x != 'dark') {
+            console.log("changing to dark");
             btn.setAttribute('class', 'dark');
             btn.textContent = "Darken";
-            overlay.style.backgroundColor = 'rgba (0, 0, 0, 0.5)';
-        } else if (x = 'dark') {
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        } else if (x =='dark') {
+            console.log("changing to light");
             btn.setAttribute('class', 'light');
             btn.textContent = "Lighten";
-            overlay.style.backgroundColor = 'rbga (0, 0, 0, 0)';
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         }
 } 
 btn.onclick = colorChange;
