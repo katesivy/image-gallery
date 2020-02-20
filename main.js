@@ -5,7 +5,7 @@ const displayedImage = document.querySelector('.displayed-img');
 /*loop to add pictures*/
 
 function loopImages() {
-    let pics = ["/images/pic1.jpg", "/images/pic2.jpg", "/images/pic3.jpg", "/images/pic4.jpg", "/images/pic5.jpg"]
+    let pics = ["images/pic1.jpg", "images/pic2.jpg", "images/pic3.jpg", "images/pic4.jpg", "images/pic5.jpg"]
     for (let i = 0; i < pics.length; i++) {
         const newImage = document.createElement('img');
         newImage.setAttribute('src', pics[i]);
